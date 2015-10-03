@@ -4,8 +4,8 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>../../MatrixSolver/DetCounter.h</itemPath>
-      <itemPath>../../MatrixSolver/MatrSolver.h</itemPath>
+      <itemPath>DetCounter.h</itemPath>
+      <itemPath>MatrSolver.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -14,9 +14,9 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>../../MatrixSolver/DetCounter.cpp</itemPath>
-      <itemPath>../../MatrixSolver/MatrSolver.cpp</itemPath>
-      <itemPath>../../MatrixSolver/main.cpp</itemPath>
+      <itemPath>DetCounter.cpp</itemPath>
+      <itemPath>MatrSolver.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -40,15 +40,15 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="../../MatrixSolver/DetCounter.cpp" ex="false" tool="1" flavor2="0">
+      <item path="DetCounter.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="../../MatrixSolver/DetCounter.h" ex="false" tool="3" flavor2="0">
+      <item path="DetCounter.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="../../MatrixSolver/MatrSolver.cpp" ex="false" tool="1" flavor2="0">
+      <item path="MatrSolver.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="../../MatrixSolver/MatrSolver.h" ex="false" tool="3" flavor2="0">
+      <item path="MatrSolver.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="../../MatrixSolver/main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -71,15 +71,15 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="../../MatrixSolver/DetCounter.cpp" ex="false" tool="1" flavor2="0">
+      <item path="DetCounter.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="../../MatrixSolver/DetCounter.h" ex="false" tool="3" flavor2="0">
+      <item path="DetCounter.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="../../MatrixSolver/MatrSolver.cpp" ex="false" tool="1" flavor2="0">
+      <item path="MatrSolver.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="../../MatrixSolver/MatrSolver.h" ex="false" tool="3" flavor2="0">
+      <item path="MatrSolver.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="../../MatrixSolver/main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

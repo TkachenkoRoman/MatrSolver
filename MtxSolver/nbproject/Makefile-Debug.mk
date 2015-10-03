@@ -35,9 +35,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/_ext/770271476/DetCounter.o \
-	${OBJECTDIR}/_ext/770271476/MatrSolver.o \
-	${OBJECTDIR}/_ext/770271476/main.o
+	${OBJECTDIR}/DetCounter.o \
+	${OBJECTDIR}/MatrSolver.o \
+	${OBJECTDIR}/main.o
 
 
 # C Compiler Flags
@@ -64,20 +64,20 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mtxsolver: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mtxsolver ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/_ext/770271476/DetCounter.o: ../../MatrixSolver/DetCounter.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/770271476
+${OBJECTDIR}/DetCounter.o: DetCounter.cpp 
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/770271476/DetCounter.o ../../MatrixSolver/DetCounter.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DetCounter.o DetCounter.cpp
 
-${OBJECTDIR}/_ext/770271476/MatrSolver.o: ../../MatrixSolver/MatrSolver.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/770271476
+${OBJECTDIR}/MatrSolver.o: MatrSolver.cpp 
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/770271476/MatrSolver.o ../../MatrixSolver/MatrSolver.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/MatrSolver.o MatrSolver.cpp
 
-${OBJECTDIR}/_ext/770271476/main.o: ../../MatrixSolver/main.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/770271476
+${OBJECTDIR}/main.o: main.cpp 
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/770271476/main.o ../../MatrixSolver/main.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:

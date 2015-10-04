@@ -16,9 +16,16 @@
 
 class MatrSolver {
 public:
+    MatrSolver();
     MatrSolver(int size);
+    int GetMatrSize();
     void Solve();
     virtual ~MatrSolver();
+    
+    int Det(int **matr, int n);
+    void FindObrMatr();
+    void Get_matr(int **matr, int n, int **temp_matr, int indRow, int indCol);
+    
 private:
     int n, det;
     int **matr;
@@ -27,9 +34,6 @@ private:
     int *b_matr;
     double *res;
     
-    void InitVars(int size);
-    void InitRand();
-    void InitMatr();
     template <typename T> void SetMtx(T **matr, int *b_matr, int n);
     template <typename T> void TransponMtx(T **matr, T **tMatr, int n);
     template <typename T> void SolveEquation(T **matr, int *b_matr, double*res, int n);
@@ -37,9 +41,9 @@ private:
     template <typename T> void PrintVector(T *vector, int n);
     template <typename T> void FreeMem(T **matr, int n);
     
-    int Det(int **matr, int n);
-    void FindObrMatr();
-    void Get_matr(int **matr, int n, int **temp_matr, int indRow, int indCol);
+    void InitVars(int size);
+    void InitRand();
+    void InitMatr();
     void FreeResources();
 };
  

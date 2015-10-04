@@ -7,6 +7,10 @@
 
 #include "MatrSolver.h"
 
+MatrSolver::MatrSolver()
+{
+}
+
 MatrSolver::MatrSolver(int size)
 {
     InitVars(size);
@@ -17,6 +21,10 @@ MatrSolver::MatrSolver(int size)
     std::cout << "Матрица В: " << std::endl;
     PrintVector(b_matr, n);
     //Solve();
+}
+
+int MatrSolver::GetMatrSize(){
+    return n;
 }
 
 void MatrSolver::Solve(){
